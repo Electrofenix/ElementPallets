@@ -168,7 +168,9 @@
         <div class="info-row"><span class="k">Teléfono</span><span class="v"><a href="tel:+528123385748">+52 (81) 2338 5748</a></span></div>
         <div class="info-row"><span class="k">Horario</span><span class="v">Lunes a viernes, 8:00 – 18:00</span></div>
       </div>
-      <form id="contactForm">
+      <form id="contactForm" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contacto">
+        <p style="display:none;"><label>No llenar: <input name="bot-field"></label></p>
         <div class="form-row">
           <div class="field">
             <label for="nombre">Nombre</label>
